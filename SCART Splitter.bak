@@ -1,0 +1,149 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:SCART-F J?
+U 1 1 5CA53CDE
+P 2050 3900
+F 0 "J?" H 2050 5320 50  0000 C CNN
+F 1 "SCART-F" H 2050 5229 50  0000 C CNN
+F 2 "" H 2050 3950 50  0001 C CNN
+F 3 " ~" H 2050 3950 50  0001 C CNN
+	1    2050 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:SCART-F J?
+U 1 1 5CA547F3
+P 7650 2300
+F 0 "J?" H 7650 3720 50  0000 C CNN
+F 1 "SCART-F" H 7650 3629 50  0000 C CNN
+F 2 "" H 7650 2350 50  0001 C CNN
+F 3 " ~" H 7650 2350 50  0001 C CNN
+	1    7650 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:SCART-F J?
+U 1 1 5CA578AD
+P 7650 4850
+F 0 "J?" H 7650 6270 50  0000 C CNN
+F 1 "SCART-F" H 7650 6179 50  0000 C CNN
+F 2 "" H 7650 4900 50  0001 C CNN
+F 3 " ~" H 7650 4900 50  0001 C CNN
+	1    7650 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L SCART_to_DVI-A_Compact-eagle-import:THS7374 ?
+U 1 1 5CA58E59
+P 4750 3550
+F 0 "?" H 4750 4136 59  0000 C CNN
+F 1 "THS7374" H 4750 4031 59  0000 C CNN
+F 2 "" H 4750 3550 50  0001 C CNN
+F 3 "" H 4750 3550 50  0001 C CNN
+	1    4750 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_B_Micro J?
+U 1 1 5CA59C80
+P 2200 1450
+F 0 "J?" H 2257 1917 50  0000 C CNN
+F 1 "USB_B_Micro" H 2257 1826 50  0000 C CNN
+F 2 "" H 2350 1400 50  0001 C CNN
+F 3 "~" H 2350 1400 50  0001 C CNN
+	1    2200 1450
+	1    0    0    -1  
+$EndComp
+Text GLabel 3950 3750 0    50   Input ~ 0
+GND
+Text GLabel 3950 3650 0    50   Input ~ 0
+GND
+$Comp
+L Switch:SW_DPDT_x2 SW?
+U 1 1 5CA5BC58
+P 4800 1350
+F 0 "SW?" H 4800 1635 50  0000 C CNN
+F 1 "SW_DPDT_x2" H 4800 1544 50  0000 C CNN
+F 2 "" H 4800 1350 50  0001 C CNN
+F 3 "~" H 4800 1350 50  0001 C CNN
+	1    4800 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_DPDT_x2 SW?
+U 2 1 5CA5C709
+P 4700 1750
+F 0 "SW?" H 4700 2035 50  0000 C CNN
+F 1 "SW_DPDT_x2" H 4700 1944 50  0000 C CNN
+F 2 "" H 4700 1750 50  0001 C CNN
+F 3 "~" H 4700 1750 50  0001 C CNN
+	2    4700 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 1350 4500 1350
+Wire Wire Line
+	4500 1350 4500 1550
+Wire Wire Line
+	4900 1650 4900 1350
+Wire Wire Line
+	4900 1350 5000 1350
+Wire Wire Line
+	5000 1350 5000 1250
+Wire Wire Line
+	4900 1850 5000 1850
+Wire Wire Line
+	5000 1850 5000 1450
+Text GLabel 5000 1650 2    50   Input ~ 0
+5V
+Text GLabel 5550 3750 2    50   Input ~ 0
+BYPASS
+Text GLabel 4050 1550 0    50   Input ~ 0
+BYPASS
+Wire Wire Line
+	4050 1550 4200 1550
+Connection ~ 4500 1550
+Wire Wire Line
+	4500 1550 4500 1750
+$Comp
+L Device:R_Small_US R?
+U 1 1 5CA5ECD3
+P 4200 1450
+F 0 "R?" H 4268 1496 50  0000 L CNN
+F 1 "100K" H 4268 1405 50  0000 L CNN
+F 2 "" H 4200 1450 50  0001 C CNN
+F 3 "~" H 4200 1450 50  0001 C CNN
+	1    4200 1450
+	1    0    0    -1  
+$EndComp
+Connection ~ 4200 1550
+Wire Wire Line
+	4200 1550 4500 1550
+Text GLabel 4200 1350 1    50   Input ~ 0
+GND
+Text GLabel 5550 3650 2    50   Input ~ 0
+5V
+NoConn ~ 2500 1450
+NoConn ~ 2500 1550
+NoConn ~ 2500 1650
+Wire Wire Line
+	2100 1850 2200 1850
+Text GLabel 2200 1850 3    50   Input ~ 0
+GND
+Text GLabel 2850 1250 2    50   Input ~ 0
+5V
+$EndSCHEMATC
